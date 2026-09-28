@@ -1,10 +1,24 @@
-# TEDxUnicamp Limeira — Site v1.3 (GitHub fácil)
+# TEDxUnicamp Limeira 2026 — Site v2.1
 
-Versão preparada para upload pelo navegador do GitHub: **todos os arquivos ficam na raiz do repositório**, sem pastas.
+Versão estática para GitHub Pages.
 
-## Publicação
-1. No GitHub, use **Add file → Upload files**.
-2. Selecione todos os arquivos desta pasta e envie.
-3. Em **Settings → Pages**, escolha **Deploy from a branch → main → /(root)** e salve.
+## Atualizações desta versão
+- indicador `CONNECTION STATUS` fixo na tela e regressivo conforme o scroll;
+- menu com seção de Extra Palestra;
+- cards de speakers clicáveis com modal de biografia, tema e redes sociais;
+- programação completa em três blocos (14h–18h30);
+- Instagram com ícone no rodapé;
+- menu mobile e refinamentos de acabamento visual.
 
-A página principal será `/` e a landing da EPTV será `/eptv.html`.
+## Onde editar
+- `data.js`: dados do evento, speakers, links, biografias, redes e programação;
+- `styles.css`: aparência;
+- `index.html`: estrutura geral;
+- `eptv.html`: landing da EPTV.
+
+## Publicar atualização no GitHub
+No repositório, use **Add file > Upload files**, selecione todos os arquivos desta pasta e confirme **Commit changes**. O GitHub Pages atualiza automaticamente.
+
+
+## Extra Palestra
+A seção Extra Palestra é uma intervenção artística que acontece nos momentos sem talks. Preencha em `data.js` o nome do artista, função, biografia, imagem, redes sociais e horários das entradas artísticas.
