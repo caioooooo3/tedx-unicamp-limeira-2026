@@ -1,3 +1,7 @@
+TEDxUnicamp Limeira — Site v2.6
+
+Atualização v2.6: imagens dos palestrantes renomeadas para evitar cache e garantir o uso das versões finais em alta resolução.
+
 # TEDxUnicamp Limeira — Site v2.5
 
 Atualizações desta versão:
