@@ -17,8 +17,7 @@ window.TEDX_DATA = {
       role: "Jornalista, diretor de TV e artista social",
       talk: "Quando a diferença conecta.",
       bio: "Jornalista, diretor de TV e fundador do bloco de carnaval Domingo Ela Não Vai, Alberto Pereira Jr. construiu uma trajetória que une cultura, comunicação e transformação social. Escreveu sobre entretenimento e cultura no Grupo Folha e desenvolveu projetos audiovisuais para Globoplay, Multishow, TV Cultura e Trace, entre outros. Artista social e ativista, atua em defesa dos direitos LGBTI+, nas pautas relacionadas ao HIV e à negritude.",
-      image: "speaker-alberto-v26.jpg",
-      position: "50% 24%",
+      image: "speaker-alberto-v27.jpg¨% 34%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -30,8 +29,7 @@ window.TEDX_DATA = {
       role: "Publicitário e estrategista de marketing",
       talk: "Colonialismo Digital: A economia da Manipulação.",
       bio: "Publicitário e estrategista de marketing com mais de 40 anos de carreira, Luciano Santos acompanhou a transição do mercado analógico para o digital. Há duas décadas, dedica-se ao estudo e ao ensino das transformações na comunicação e no comportamento humano. Professor em cursos de MBA e pós-graduação, mentor, consultor e palestrante, analisa como as redes sociais, o comércio eletrônico e a inteligência artificial influenciam nossas decisões, nossa autonomia e nossa liberdade de escolha.",
-      image: "speaker-luciano-v26.jpg",
-      position: "50% 22%",
+      image: "speaker-luciano-v27.jpg% 34%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -43,8 +41,7 @@ window.TEDX_DATA = {
       role: "Engenheira de Produção, ultramaratonista e criadora de conteúdo",
       talk: "Você ainda sabe voltar?",
       bio: "Formada em Engenharia de Produção, Bruna Ianhez construiu uma carreira na indústria antes de se dedicar à criação de conteúdo e ao esporte. Após nove anos competindo no CrossFit, encontrou na corrida e nas ultramaratonas novos caminhos para desafiar seus limites e inspirar outras pessoas. Criadora da comunidade #TeamBru, compartilha a filosofia de ser “1% melhor que ontem”, mostrando como pequenas mudanças de hábito podem transformar vidas.",
-      image: "speaker-bruna-v26.jpg",
-      position: "50% 18%",
+      image: "speaker-bruna-v27.jpg¨% 28%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -56,8 +53,7 @@ window.TEDX_DATA = {
       role: "Consultora, professora, escritora e palestrante",
       talk: "O que nos conecta à felicidade?",
       bio: "Consultora, professora, escritora e palestrante, Monike Lepletier é especialista em cultura organizacional, liderança, felicidade e bem-estar no trabalho. É fundadora da ONNI Consultoria, Chief Happiness Officer e coautora do livro Gestão de Mudanças Organizacionais na Prática. Sua trajetória une o mundo corporativo, a educação e o desenvolvimento humano.",
-      image: "speaker-monike-v26.jpg",
-      position: "50% 18%",
+      image: "speaker-monike-v27.jpg¨% 24%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -69,8 +65,7 @@ window.TEDX_DATA = {
       role: "Docente da Unicamp e diretora da Escola da Inclusão",
       talk: "Quando a Diferença Fica Sem Sinal.",
       bio: "Diretora da Escola da Inclusão da Secretaria de Estado dos Direitos da Pessoa com Deficiência de São Paulo e docente da Unicamp desde 2003, Lubienska Ribeiro dedica sua trajetória à educação e à inclusão. Engenheira civil, mestre, doutora e livre-docente pela Unicamp, desenvolve e coordena, há mais de duas décadas, projetos junto a pessoas com deficiência, educadores, gestores públicos e comunidades, contribuindo para a construção de ações e políticas inclusivas.",
-      image: "speaker-lubienska-v26.jpg",
-      position: "50% 25%",
+      image: "speaker-lubienska-v27.jpg¨% 28%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -82,9 +77,7 @@ window.TEDX_DATA = {
       role: "Professora, pesquisadora e empreendedora social",
       talk: "Favelas inteligentes: o futuro que já acontece na quebrada.",
       bio: "Mestre em Tecnologias da Inteligência e Design Digital (TIDD) pela PUC-SP, Solange Luz é professora universitária na Link School of Business, pesquisadora e empreendedora social. É cofundadora e presidente do Movimento Conexão Favela, organização voltada ao desenvolvimento e à criação de oportunidades nas periferias. Suas pesquisas abordam capacitação, empregabilidade de jovens periféricos e favelas inteligentes, destacando o papel das periferias na criação de tecnologias e na construção de futuros mais prósperos e igualitários.",
-      image: "speaker-solange-v26.jpg",
-      initials: "SL",
-      position: "50% 20%",
+      image: "speaker-solange-v27.jpg¨% 26%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -96,8 +89,7 @@ window.TEDX_DATA = {
       role: "Comunicóloga, apresentadora e fundadora da Ayla Comunicação",
       talk: "Silêncio: a tecnologia das relações.",
       bio: "Comunicóloga e apresentadora do Shark Tank Brasil, Luitha Miraglia construiu uma trajetória que une televisão, entrevistas e histórias, com passagens pela MTV Brasil e pela Band. Fundadora da Ayla Comunicação, atua com palestras e treinamentos de oratória, comunicação consciente e desenvolvimento pessoal, ajudando pessoas a se expressarem com autenticidade, clareza e conexão.",
-      image: "speaker-luitha-v26.jpg",
-      position: "50% 22%",
+      image: "speaker-luitha-v27.jpg¨% 25%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -109,8 +101,7 @@ window.TEDX_DATA = {
       role: "Senior Site Reliability Engineer, palestrante e líder de comunidade tech",
       talk: "As máquinas sabem descansar, mas nós não: vivendo assíncrono!",
       bio: "Profissional de Tecnologia da Informação, Camilla Martins atua como Senior Site Reliability Engineer na Storyblok e há mais de dez anos compartilha conhecimento como palestrante. Reconhecida como Google Developer Expert em Cloud, Docker Captain e IBM Champion, participa ativamente de comunidades e organiza eventos que conectam pessoas e ideias no universo da tecnologia. Sua trajetória combina experiência técnica, compartilhamento de conhecimento e reflexões sobre os limites da conectividade.",
-      image: "speaker-camilla-v26.jpg",
-      position: "50% 24%",
+      image: "speaker-camilla-v27.jpg¨% 22%",
       instagram: "",
       linkedin: "",
       website: ""
@@ -122,8 +113,7 @@ window.TEDX_DATA = {
       role: "Consultor, docente e pesquisador",
       talk: "A coragem de desconectar no trabalho.",
       bio: "Consultor, docente e pesquisador, Antonio César Barbarini reúne mais de 35 anos de experiência no desenvolvimento de talentos, lideranças e equipes, com atuação em empresas como Pfizer e Unilever. Doutor em Gestão Humana e Social das Organizações e mestre em Aprendizagem Organizacional, é autor de livros e artigos e professor nos programas de Pós-Graduação/MBA da Universidade Mackenzie. Sua trajetória une ciência e prática nas áreas de liderança, aprendizagem, inovação e colaboração.",
-      image: "speaker-antonio-v26.jpg",
-      position: "50% 24%",
+      image: "speaker-antonio-v27.jpg% 36%",
       instagram: "",
       linkedin: "",
       website: ""
