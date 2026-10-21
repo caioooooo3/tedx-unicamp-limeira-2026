@@ -7,7 +7,7 @@
   <title>TEDxUnicamp Limeira — Desconectados</title>
   <meta name="description" content="TEDxUnicamp Limeira 2026 — Desconectados. Ideias que nos convidam a estar presentes.">
   <meta property="og:title" content="TEDxUnicamp Limeira 2026 — Desconectados">
-  <meta property="og:description" content="20 de outubro de 2026, às 14h. Uma experiência para ideias que provocam, atravessam e reconectam.">
+  <meta property="og:description" content="A conexão continua. Nova data em breve. TEDxUnicamp Limeira 2026 — Desconectados.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://caioooooo3.github.io/tedx-unicamp-limeira-2026/">
   <link rel="canonical" href="https://caioooooo3.github.io/tedx-unicamp-limeira-2026/">
@@ -26,13 +26,13 @@
       <a href="#programacao">Programação</a>
       <a href="#evento">Evento</a>
     </nav>
-    <a class="cta nav-cta" data-tickets href="#">Participar</a>
+    <span class="date-status nav-date-status">Nova data em breve</span>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span>
     </button>
   </div>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação mobile">
-    <a href="#tema">Tema</a><a href="#speakers">Speakers</a><a href="#extra">Extra Palestra</a><a href="#programacao">Programação</a><a href="#evento">Evento</a><a data-tickets href="#">Participar ↗</a>
+    <a href="#tema">Tema</a><a href="#speakers">Speakers</a><a href="#extra">Extra Palestra</a><a href="#programacao">Programação</a><a href="#evento">Evento</a><a href="#evento">Nova data em breve</a>
   </nav>
 </header>
 
@@ -48,7 +48,7 @@
       <h1>VOCÊ<br>ESTÁ <span class="disconnect">AÍ?</span></h1>
       <div class="hero-bottom">
         <div class="hero-copy">Vivemos conectados o tempo todo. Mas quando foi a última vez que você esteve realmente presente?</div>
-        <div class="hero-meta"><span data-date></span><span data-time></span><span data-city></span></div>
+        <div class="hero-meta"><span data-date></span><span data-city></span></div>
       </div>
     </div>
   </section>
@@ -64,7 +64,7 @@
   <section class="section reveal" id="speakers">
     <div class="wrap">
       <div class="section-tag">02 // Quem sobe ao palco</div>
-      <div class="section-heading-row"><h2>IDEIAS TÊM<br><span class="red">ROSTO.</span></h2><p>Clique em cada speaker para conhecer sua trajetória, o tema da palestra e suas redes.</p></div>
+      <div class="section-heading-row"><h2>IDEIAS TÊM<br><span class="red">ROSTO.</span></h2><p>Clique em cada speaker para conhecer sua trajetória, o tema da palestra e o horário no palco.</p></div>
       <div class="speakers-grid" id="speakers-grid"></div>
     </div>
   </section>
@@ -92,10 +92,10 @@
   </section>
 
   <section class="section reveal" id="evento">
-    <div class="wrap location"><div><div class="section-tag">06 // O encontro</div><h2>SAIA DO<br>FEED.</h2><p class="event-copy">Por algumas horas, troque a rolagem infinita por ideias, pessoas e conversas que acontecem ao vivo.</p></div><div class="location-card"><div class="date">20.10<br>2026</div><p><strong data-city></strong><br><span data-time></span> · <span data-venue></span></p><a class="cta" data-tickets href="#">Quero participar</a></div></div>
+    <div class="wrap location"><div><div class="section-tag">06 // O encontro</div><h2>A CONEXÃO<br><span class="red">CONTINUA.</span></h2><p class="event-copy">Estamos preparando um novo momento para viver <strong>Desconectados</strong> juntos. A programação continua de pé — e a nova data será anunciada em breve.</p></div><div class="location-card is-date-update"><div class="date date-soon">NOVA DATA<br>EM BREVE</div><p><strong>Limeira, SP</strong><br>Fique por perto. O próximo encontro já está sendo preparado.</p><a class="ghost-event" data-instagram href="#" target="_blank" rel="noopener">Acompanhar novidades no Instagram ↗</a></div></div>
   </section>
 
-  <section class="final-cta reveal"><div class="wrap"><div class="section-tag">CONNECTION LOST // PRESENÇA ENCONTRADA</div><div class="question">E se a conexão que está faltando for justamente essa?</div><a class="cta" data-tickets href="#">Eu quero estar lá</a></div></section>
+  <section class="final-cta reveal"><div class="wrap"><div class="section-tag">CONNECTION LOST // PRESENÇA ENCONTRADA</div><div class="question">A conexão continua.<br><span class="red">Nova data em breve.</span></div><p class="final-subcopy">O próximo encontro já está sendo preparado. Acompanhe o TEDxUnicamp Limeira para receber as novidades.</p><a class="cta" data-instagram href="#" target="_blank" rel="noopener">Acompanhar novidades</a></div></section>
 </main>
 
 <footer class="footer">
@@ -112,7 +112,7 @@
   <div class="speaker-modal-backdrop" data-modal-close></div>
   <div class="speaker-modal-card" role="document">
     <button class="modal-close" type="button" aria-label="Fechar perfil" data-modal-close>×</button>
-    <div class="modal-image-wrap"><img id="modal-image" src="" alt=""></div>
+    <div class="modal-image-wrap"><img id="modal-image" src="" alt=""><div class="modal-placeholder" id="modal-placeholder" hidden></div></div>
     <div class="modal-content"><div class="section-tag" id="modal-index"></div><h2 id="modal-name"></h2><p class="modal-role" id="modal-role"></p><div class="modal-label">Tema da palestra</div><h3 id="modal-talk"></h3><div class="modal-label">Sobre</div><p class="modal-bio" id="modal-bio"></p><div class="social-links" id="modal-socials"></div></div>
   </div>
 </div>

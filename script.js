@@ -4,16 +4,17 @@ const $$=(s,root=document)=>[...root.querySelectorAll(s)];
 const event=D.event;
 
 $('[data-theme]').textContent=event.theme;
-$('[data-date]').textContent=event.date;
+const dateEl=$('[data-date]'); if(dateEl) dateEl.textContent=event.date;
 $$('[data-city]').forEach(el=>el.textContent=event.city);
-$$('[data-time]').forEach(el=>el.textContent=event.time);
-$('[data-venue]').textContent=event.venue;
-$$('[data-tickets]').forEach(a=>{a.href=event.ticketsUrl;a.target='_blank';a.rel='noopener'});
+$$('[data-time]').forEach(el=>{el.textContent=event.time; if(!event.time) el.hidden=true});
+const venueEl=$('[data-venue]'); if(venueEl) venueEl.textContent=event.venue;
 $$('[data-instagram]').forEach(a=>a.href=event.instagramUrl);
 $$('[data-instagram-handle]').forEach(el=>el.textContent=event.instagramHandle);
 
 const socialIcon=(type)=>({instagram:'Instagram',linkedin:'LinkedIn',website:'Site'}[type]||type);
+const speakerIndexById=new Map(D.speakers.map((s,i)=>[s.id,i]));
 const grid=$('#speakers-grid');
+
 D.speakers.forEach((s,i)=>{
   const el=document.createElement('article');
   el.className='speaker';
@@ -21,7 +22,10 @@ D.speakers.forEach((s,i)=>{
   el.setAttribute('role','button');
   el.setAttribute('aria-label',`Abrir perfil de ${s.name}`);
   if(s.position) el.style.setProperty('--pos',s.position);
-  el.innerHTML=`<img src="${s.image}" alt="Foto de ${s.name}" loading="lazy"><div class="speaker-info"><div class="speaker-index">SPEAKER // ${String(i+1).padStart(2,'0')}</div><div class="speaker-name">${s.name}</div><div class="speaker-role">${s.role}</div><div class="speaker-more">Ver perfil <span>↗</span></div></div>`;
+  const visual=s.image
+    ? `<img src="${s.image}" alt="Foto de ${s.name}" loading="lazy">`
+    : `<div class="speaker-placeholder" aria-label="Foto de ${s.name} em breve"><span>${s.initials||s.name.split(' ').map(p=>p[0]).slice(0,2).join('')}</span><small>foto em breve</small></div>`;
+  el.innerHTML=`${visual}<div class="speaker-info"><div class="speaker-index">${s.time} // SPEAKER ${String(i+1).padStart(2,'0')}</div><div class="speaker-name">${s.name}</div><div class="speaker-role">${s.talk}</div><div class="speaker-more">Ver perfil <span>↗</span></div></div>`;
   const open=()=>openSpeaker(i);
   el.addEventListener('click',open);
   el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
@@ -33,11 +37,23 @@ function renderSchedule(target,items){
   root.innerHTML=items.map(item=>{
     const block=item.block?`<div class="schedule-block"><span>${item.block}</span></div>`:'';
     const kind=item.kind?` is-${item.kind}`:'';
-    return `${block}<div class="schedule-row${kind}"><div class="schedule-time">${item.time}</div><div class="schedule-title">${item.title}</div><div class="schedule-status">${item.status}</div></div>`;
+    const speakerAttr=item.speakerId?` data-speaker-id="${item.speakerId}" role="button" tabindex="0" aria-label="Abrir perfil de ${D.speakers[speakerIndexById.get(item.speakerId)]?.name||'palestrante'}"`:'';
+    const clickHint=item.speakerId?`<span class="schedule-open">ver perfil ↗</span>`:'';
+    return `${block}<div class="schedule-row${kind}${item.speakerId?' is-clickable':''}"${speakerAttr}><div class="schedule-time">${item.time}</div><div class="schedule-title">${item.title}${clickHint}</div><div class="schedule-status">${item.status}</div></div>`;
   }).join('');
 }
 renderSchedule('#main-schedule',D.schedule);
 renderSchedule('#extra-schedule',D.extraTalk.schedule);
+
+$$('[data-speaker-id]').forEach(row=>{
+  const open=()=>{
+    const i=speakerIndexById.get(row.dataset.speakerId);
+    if(i!==undefined)openSpeaker(i);
+  };
+  row.addEventListener('click',open);
+  row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+});
+
 $('#extra-title').innerHTML=D.extraTalk.title.replace(/\n/g,'<br>');
 $('#extra-description').textContent=D.extraTalk.description;
 $('#extra-artist').textContent=D.extraTalk.artist;
@@ -62,21 +78,40 @@ addEventListener('resize',updateSignal,{passive:true});
 updateSignal();
 
 const modal=$('#speaker-modal');
-const modalImage=$('#modal-image'),modalName=$('#modal-name'),modalRole=$('#modal-role'),modalTalk=$('#modal-talk'),modalBio=$('#modal-bio'),modalIndex=$('#modal-index'),modalSocials=$('#modal-socials');
+const modalImage=$('#modal-image'),modalPlaceholder=$('#modal-placeholder'),modalName=$('#modal-name'),modalRole=$('#modal-role'),modalTalk=$('#modal-talk'),modalBio=$('#modal-bio'),modalIndex=$('#modal-index'),modalSocials=$('#modal-socials');
 let lastFocused=null;
 function openSpeaker(i){
   const s=D.speakers[i];
   lastFocused=document.activeElement;
-  modalImage.src=s.image; modalImage.alt=`Foto de ${s.name}`;
-  modalName.textContent=s.name; modalRole.textContent=s.role; modalTalk.textContent=s.talk; modalBio.textContent=s.bio; modalIndex.textContent=`SPEAKER // ${String(i+1).padStart(2,'0')}`;
+  if(s.image){
+    modalImage.src=s.image;
+    modalImage.alt=`Foto de ${s.name}`;
+    modalImage.hidden=false;
+    modalPlaceholder.hidden=true;
+  }else{
+    modalImage.removeAttribute('src');
+    modalImage.alt='';
+    modalImage.hidden=true;
+    modalPlaceholder.hidden=false;
+    modalPlaceholder.innerHTML=`<span>${s.initials||'TEDx'}</span><small>foto em breve</small>`;
+  }
+  modalName.textContent=s.name;
+  modalRole.textContent=s.role;
+  modalTalk.textContent=s.talk;
+  modalBio.textContent=s.bio;
+  modalIndex.textContent=`${s.time} // SPEAKER ${String(i+1).padStart(2,'0')}`;
   const links=[['instagram',s.instagram],['linkedin',s.linkedin],['website',s.website]].filter(([,url])=>url);
   modalSocials.innerHTML=links.length?links.map(([type,url])=>`<a href="${url}" target="_blank" rel="noopener">${socialIcon(type)} ↗</a>`).join(''):'<span class="social-empty">Redes sociais em breve.</span>';
-  modal.classList.add('is-open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('modal-open');
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden','false');
+  document.body.classList.add('modal-open');
   $('.modal-close',modal).focus();
 }
 function closeModal(){
-  modal.classList.remove('is-open'); modal.setAttribute('aria-hidden','true'); document.body.classList.remove('modal-open');
-  if(lastFocused) lastFocused.focus();
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden','true');
+  document.body.classList.remove('modal-open');
+  if(lastFocused)lastFocused.focus();
 }
 $$('[data-modal-close]').forEach(el=>el.addEventListener('click',closeModal));
 addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('is-open'))closeModal()});
