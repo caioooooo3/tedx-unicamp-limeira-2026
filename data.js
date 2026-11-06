@@ -1,11 +1,11 @@
 window.TEDX_DATA = {
   event: {
     theme: "DESCONECTADOS",
-    date: "Nova data em breve",
+    date: "05 de dezembro de 2026",
     city: "Limeira, SP",
-    time: "",
+    time: "14h",
     venue: "Limeira, SP",
-    ticketsUrl: "",
+    ticketsUrl: "https://cheers.com.br/evento/tedxunicamp-limeira-38114",
     instagramUrl: "https://www.instagram.com/tedxunicamplimeira/",
     instagramHandle: "@tedxunicamplimeira"
   },
