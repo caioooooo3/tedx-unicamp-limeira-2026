@@ -8,8 +8,8 @@ const dateEl=$('[data-date]'); if(dateEl) dateEl.textContent=event.date;
 $$('[data-city]').forEach(el=>el.textContent=event.city);
 $$('[data-time]').forEach(el=>{el.textContent=event.time; if(!event.time) el.hidden=true});
 const venueEl=$('[data-venue]'); if(venueEl) venueEl.textContent=event.venue;
-$('[data-instagram]').forEach(a=>a.href=event.instagramUrl);
-$('[data-tickets]').forEach(a=>a.href=event.ticketsUrl);
+$$('[data-instagram]').forEach(a=>a.href=event.instagramUrl);
+$$('[data-tickets]').forEach(a=>a.href=event.ticketsUrl);
 $$('[data-instagram-handle]').forEach(el=>el.textContent=event.instagramHandle);
 
 const socialIcon=(type)=>({instagram:'Instagram',linkedin:'LinkedIn',website:'Site'}[type]||type);
