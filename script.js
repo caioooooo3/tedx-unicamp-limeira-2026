@@ -26,7 +26,8 @@ D.speakers.forEach((s,i)=>{
   const visual=s.image
     ? `<img src="${s.image}" alt="Foto de ${s.name}" loading="lazy">`
     : `<div class="speaker-placeholder" aria-label="Foto de ${s.name} em breve"><span>${s.initials||s.name.split(' ').map(p=>p[0]).slice(0,2).join('')}</span><small>foto em breve</small></div>`;
-  el.innerHTML=`${visual}<div class="speaker-info"><div class="speaker-index">${s.time} // SPEAKER ${String(i+1).padStart(2,'0')}</div><div class="speaker-name">${s.name}</div><div class="speaker-role">${s.talk}</div><div class="speaker-more">Ver perfil <span>↗</span></div></div>`;
+  const speakerLabel=s.time?`${s.time} // SPEAKER ${String(i+1).padStart(2,'0')}`:`SPEAKER ${String(i+1).padStart(2,'0')}`;
+  el.innerHTML=`${visual}<div class="speaker-info"><div class="speaker-index">${speakerLabel}</div><div class="speaker-name">${s.name}</div><div class="speaker-role">${s.talk}</div><div class="speaker-more">Ver perfil <span>↗</span></div></div>`;
   const open=()=>openSpeaker(i);
   el.addEventListener('click',open);
   el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
@@ -100,7 +101,7 @@ function openSpeaker(i){
   modalRole.textContent=s.role;
   modalTalk.textContent=s.talk;
   modalBio.textContent=s.bio;
-  modalIndex.textContent=`${s.time} // SPEAKER ${String(i+1).padStart(2,'0')}`;
+  modalIndex.textContent=s.time?`${s.time} // SPEAKER ${String(i+1).padStart(2,'0')}`:`SPEAKER ${String(i+1).padStart(2,'0')}`;
   const links=[['instagram',s.instagram],['linkedin',s.linkedin],['website',s.website]].filter(([,url])=>url);
   modalSocials.innerHTML=links.length?links.map(([type,url])=>`<a href="${url}" target="_blank" rel="noopener">${socialIcon(type)} ↗</a>`).join(''):'<span class="social-empty">Redes sociais em breve.</span>';
   modal.classList.add('is-open');
