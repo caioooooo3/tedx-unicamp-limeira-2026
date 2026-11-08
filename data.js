@@ -128,6 +128,10 @@ window.TEDX_DATA = {
     instagram: "",
     website: "",
     schedule: [
+      { time: "—", title: "Cronograma da Extra Palestra", status: "A divulgar" }
+    ]
+  },
+  schedule: [
     { time: "13h–19h", title: "Programação completa", status: "A divulgar", kind: "opening" }
   ]
 };
