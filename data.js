@@ -3,7 +3,7 @@ window.TEDX_DATA = {
     theme: "DESCONECTADOS",
     date: "05 de dezembro de 2026",
     city: "Limeira, SP",
-    time: "14h",
+    time: "13h às 19h",
     venue: "Escola Técnica Estadual Trajano Camargo",
     address: "R. Ten. Belizário, 439 - Centro, Limeira - SP, 13480-120",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Escola+T%C3%A9cnica+Estadual+Trajano+Camargo%2C+R.+Ten.+Beliz%C3%A1rio%2C+439%2C+Centro%2C+Limeira+-+SP%2C+13480-120",
@@ -15,7 +15,7 @@ window.TEDX_DATA = {
     {
       id: "alberto",
       name: "Alberto Pereira Jr.",
-      time: "14:20",
+      time: "",
       role: "Jornalista, diretor de TV e artista social",
       talk: "Quando a diferença conecta.",
       bio: "Jornalista, diretor de TV e fundador do bloco de carnaval Domingo Ela Não Vai, Alberto Pereira Jr. construiu uma trajetória que une cultura, comunicação e transformação social. Escreveu sobre entretenimento e cultura no Grupo Folha e desenvolveu projetos audiovisuais para Globoplay, Multishow, TV Cultura e Trace, entre outros. Artista social e ativista, atua em defesa dos direitos LGBTI+, nas pautas relacionadas ao HIV e à negritude.",
@@ -28,7 +28,7 @@ window.TEDX_DATA = {
     {
       id: "luciano",
       name: "Luciano Santos",
-      time: "14:40",
+      time: "",
       role: "Publicitário e estrategista de marketing",
       talk: "Colonialismo Digital: A economia da Manipulação.",
       bio: "Publicitário e estrategista de marketing com mais de 40 anos de carreira, Luciano Santos acompanhou a transição do mercado analógico para o digital. Há duas décadas, dedica-se ao estudo e ao ensino das transformações na comunicação e no comportamento humano. Professor em cursos de MBA e pós-graduação, mentor, consultor e palestrante, analisa como as redes sociais, o comércio eletrônico e a inteligência artificial influenciam nossas decisões, nossa autonomia e nossa liberdade de escolha.",
@@ -41,7 +41,7 @@ window.TEDX_DATA = {
     {
       id: "monike",
       name: "Monike Lepletier",
-      time: "16:00",
+      time: "",
       role: "Consultora, professora, escritora e palestrante",
       talk: "O que nos conecta à felicidade?",
       bio: "Consultora, professora, escritora e palestrante, Monike Lepletier é especialista em cultura organizacional, liderança, felicidade e bem-estar no trabalho. É fundadora da ONNI Consultoria, Chief Happiness Officer e coautora do livro Gestão de Mudanças Organizacionais na Prática. Sua trajetória une o mundo corporativo, a educação e o desenvolvimento humano.",
@@ -54,7 +54,7 @@ window.TEDX_DATA = {
     {
       id: "lubienska",
       name: "Lubienska Ribeiro",
-      time: "16:20",
+      time: "",
       role: "Docente da Unicamp e diretora da Escola da Inclusão",
       talk: "Quando a Diferença Fica Sem Sinal.",
       bio: "Diretora da Escola da Inclusão da Secretaria de Estado dos Direitos da Pessoa com Deficiência de São Paulo e docente da Unicamp desde 2003, Lubienska Ribeiro dedica sua trajetória à educação e à inclusão. Engenheira civil, mestre, doutora e livre-docente pela Unicamp, desenvolve e coordena, há mais de duas décadas, projetos junto a pessoas com deficiência, educadores, gestores públicos e comunidades, contribuindo para a construção de ações e políticas inclusivas.",
@@ -67,7 +67,7 @@ window.TEDX_DATA = {
     {
       id: "solange",
       name: "Solange Luz",
-      time: "16:40",
+      time: "",
       role: "Professora, pesquisadora e empreendedora social",
       talk: "Favelas inteligentes: o futuro que já acontece na quebrada.",
       bio: "Mestre em Tecnologias da Inteligência e Design Digital (TIDD) pela PUC-SP, Solange Luz é professora universitária na Link School of Business, pesquisadora e empreendedora social. É cofundadora e presidente do Movimento Conexão Favela, organização voltada ao desenvolvimento e à criação de oportunidades nas periferias. Suas pesquisas abordam capacitação, empregabilidade de jovens periféricos e favelas inteligentes, destacando o papel das periferias na criação de tecnologias e na construção de futuros mais prósperos e igualitários.",
@@ -80,7 +80,7 @@ window.TEDX_DATA = {
     {
       id: "luitha",
       name: "Luitha Miraglia",
-      time: "17:30",
+      time: "",
       role: "Comunicóloga, apresentadora e fundadora da Ayla Comunicação",
       talk: "Silêncio: a tecnologia das relações.",
       bio: "Comunicóloga e apresentadora do Shark Tank Brasil, Luitha Miraglia construiu uma trajetória que une televisão, entrevistas e histórias, com passagens pela MTV Brasil e pela Band. Fundadora da Ayla Comunicação, atua com palestras e treinamentos de oratória, comunicação consciente e desenvolvimento pessoal, ajudando pessoas a se expressarem com autenticidade, clareza e conexão.",
@@ -93,7 +93,7 @@ window.TEDX_DATA = {
     {
       id: "camilla",
       name: "Camilla Martins",
-      time: "17:50",
+      time: "",
       role: "Senior Site Reliability Engineer, palestrante e líder de comunidade tech",
       talk: "As máquinas sabem descansar, mas nós não: vivendo assíncrono!",
       bio: "Profissional de Tecnologia da Informação, Camilla Martins atua como Senior Site Reliability Engineer na Storyblok e há mais de dez anos compartilha conhecimento como palestrante. Reconhecida como Google Developer Expert em Cloud, Docker Captain e IBM Champion, participa ativamente de comunidades e organiza eventos que conectam pessoas e ideias no universo da tecnologia. Sua trajetória combina experiência técnica, compartilhamento de conhecimento e reflexões sobre os limites da conectividade.",
@@ -106,7 +106,7 @@ window.TEDX_DATA = {
     {
       id: "antonio",
       name: "Antonio César Barbarini",
-      time: "18:10",
+      time: "",
       role: "Consultor, docente e pesquisador",
       talk: "A coragem de desconectar no trabalho.",
       bio: "Consultor, docente e pesquisador, Antonio César Barbarini reúne mais de 35 anos de experiência no desenvolvimento de talentos, lideranças e equipes, com atuação em empresas como Pfizer e Unilever. Doutor em Gestão Humana e Social das Organizações e mestre em Aprendizagem Organizacional, é autor de livros e artigos e professor nos programas de Pós-Graduação/MBA da Universidade Mackenzie. Sua trajetória une ciência e prática nas áreas de liderança, aprendizagem, inovação e colaboração.",
@@ -128,39 +128,6 @@ window.TEDX_DATA = {
     instagram: "",
     website: "",
     schedule: [
-      { time: "—", title: "Extra Palestra", status: "horários em definição" }
-    ]
-  },
-  schedule: [
-    { block: "1º BLOCO", time: "14:00", title: "Abertura", status: "Abertura", kind: "opening" },
-    { time: "14:15", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "14:20", title: "Alberto Pereira Jr. — Quando a diferença conecta.", status: "Palestra", kind: "talk", speakerId: "alberto" },
-    { time: "14:35", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "14:40", title: "Luciano Santos — Colonialismo Digital: A economia da Manipulação.", status: "Palestra", kind: "talk", speakerId: "luciano" },
-    { time: "14:55", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "15:15", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "15:20", title: "Intervalo", status: "20 min", kind: "break" },
-
-    { block: "2º BLOCO", time: "15:40", title: "Retomada", status: "Retomada", kind: "opening" },
-    { time: "15:45", title: "Dinâmica", status: "Experiência", kind: "dynamic" },
-    { time: "15:55", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "16:00", title: "Monike Lepletier — O que nos conecta à felicidade?", status: "Palestra", kind: "talk", speakerId: "monike" },
-    { time: "16:15", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "16:20", title: "Lubienska Ribeiro — Quando a Diferença Fica Sem Sinal.", status: "Palestra", kind: "talk", speakerId: "lubienska" },
-    { time: "16:35", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "16:40", title: "Solange Luz — Favelas inteligentes: o futuro que já acontece na quebrada.", status: "Palestra", kind: "talk", speakerId: "solange" },
-    { time: "16:45", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "16:50", title: "Intervalo", status: "20 min", kind: "break" },
-
-    { block: "3º BLOCO", time: "17:10", title: "Retomada", status: "Retomada", kind: "opening" },
-    { time: "17:15", title: "Dinâmica", status: "Experiência", kind: "dynamic" },
-    { time: "17:25", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "17:30", title: "Luitha Miraglia — Silêncio: a tecnologia das relações.", status: "Palestra", kind: "talk", speakerId: "luitha" },
-    { time: "17:45", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "17:50", title: "Camilla Martins — As máquinas sabem descansar, mas nós não: vivendo assíncrono!", status: "Palestra", kind: "talk", speakerId: "camilla" },
-    { time: "18:05", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "18:10", title: "Antonio César Barbarini — A coragem de desconectar no trabalho.", status: "Palestra", kind: "talk", speakerId: "antonio" },
-    { time: "18:25", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "18:30", title: "Encerramento", status: "Encerramento", kind: "closing" }
+    { time: "13h–19h", title: "Programação completa", status: "A divulgar", kind: "opening" }
   ]
 };
