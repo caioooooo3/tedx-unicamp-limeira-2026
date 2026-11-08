@@ -4,7 +4,9 @@ window.TEDX_DATA = {
     date: "05 de dezembro de 2026",
     city: "Limeira, SP",
     time: "14h",
-    venue: "Limeira, SP",
+    venue: "Escola Técnica Estadual Trajano Camargo",
+    address: "R. Ten. Belizário, 439 - Centro, Limeira - SP, 13480-120",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Escola+T%C3%A9cnica+Estadual+Trajano+Camargo%2C+R.+Ten.+Beliz%C3%A1rio%2C+439%2C+Centro%2C+Limeira+-+SP%2C+13480-120",
     ticketsUrl: "https://cheers.com.br/evento/tedxunicamp-limeira-38114",
     instagramUrl: "https://www.instagram.com/tedxunicamplimeira/",
     instagramHandle: "@tedxunicamplimeira"
@@ -31,19 +33,6 @@ window.TEDX_DATA = {
       talk: "Colonialismo Digital: A economia da Manipulação.",
       bio: "Publicitário e estrategista de marketing com mais de 40 anos de carreira, Luciano Santos acompanhou a transição do mercado analógico para o digital. Há duas décadas, dedica-se ao estudo e ao ensino das transformações na comunicação e no comportamento humano. Professor em cursos de MBA e pós-graduação, mentor, consultor e palestrante, analisa como as redes sociais, o comércio eletrônico e a inteligência artificial influenciam nossas decisões, nossa autonomia e nossa liberdade de escolha.",
       image: "speaker-luciano-v26.jpg",
-      position: "50% 50%",
-      instagram: "",
-      linkedin: "",
-      website: ""
-    },
-    {
-      id: "bruna",
-      name: "Bruna Ianhez",
-      time: "15:00",
-      role: "Engenheira de Produção, ultramaratonista e criadora de conteúdo",
-      talk: "Você ainda sabe voltar?",
-      bio: "Formada em Engenharia de Produção, Bruna Ianhez construiu uma carreira na indústria antes de se dedicar à criação de conteúdo e ao esporte. Após nove anos competindo no CrossFit, encontrou na corrida e nas ultramaratonas novos caminhos para desafiar seus limites e inspirar outras pessoas. Criadora da comunidade #TeamBru, compartilha a filosofia de ser “1% melhor que ontem”, mostrando como pequenas mudanças de hábito podem transformar vidas.",
-      image: "speaker-bruna-v26.jpg",
       position: "50% 50%",
       instagram: "",
       linkedin: "",
@@ -149,7 +138,6 @@ window.TEDX_DATA = {
     { time: "14:35", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
     { time: "14:40", title: "Luciano Santos — Colonialismo Digital: A economia da Manipulação.", status: "Palestra", kind: "talk", speakerId: "luciano" },
     { time: "14:55", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
-    { time: "15:00", title: "Bruna Ianhez — Você ainda sabe voltar?", status: "Palestra", kind: "talk", speakerId: "bruna" },
     { time: "15:15", title: "Fala da mestre de cerimônia", status: "Condução", kind: "mc" },
     { time: "15:20", title: "Intervalo", status: "20 min", kind: "break" },
 
