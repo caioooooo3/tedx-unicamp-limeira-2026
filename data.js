@@ -119,15 +119,53 @@ window.TEDX_DATA = {
   ],
   extraTalk: {
     eyebrow: "Extra Palestra",
-    title: "ARTE ENTRE\nAS IDEIAS.",
-    artist: "Artista em breve",
-    artistRole: "Intervenção artística // Extra Palestra",
-    description: "A Extra Palestra acontece justamente nos momentos em que não há uma palestra no palco: uma intervenção artística pensada para ocupar as transições, os respiros e os intervalos da experiência TEDx.",
-    bio: "A biografia completa do artista será publicada aqui assim que as informações oficiais forem inseridas.",
-    image: "",
-    instagram: "",
-    website: "",
+    title: "ARTE, MOVIMENTO\nE PRESENÇA.",
+    description: "A Extra Palestra ocupa os momentos entre os talks com experiências que transformam pausa em presença. Nesta edição, desenho, circo e movimento ampliam o tema Desconectados para além das palavras.",
+    activities: [
+      {
+        id: "intraforma",
+        label: "OFICINA // DESENHO",
+        name: "INTRAFORMA",
+        subtitle: "Desenhar para se reconectar.",
+        role: "Sônia Miraglia",
+        description: "INTRAFORMA é um método autoral que utiliza o desenho de formas e padrões repetitivos como uma experiência de relaxamento, presença e conexão consigo mesmo. Não é preciso saber desenhar: o convite é desacelerar, explorar a criatividade e encontrar, por meio de traços e formas, um momento de pausa e bem-estar.",
+        visual: "IN",
+        image: "",
+        instagram: "",
+        website: ""
+      },
+      {
+        id: "ramatis",
+        label: "APRESENTAÇÃO // CIRCO",
+        name: "CIRCO E MALABARES",
+        subtitle: "Fraternidade do Triângulo Ramatis",
+        role: "FTRamatis // Limeira",
+        description: "Fundada em 1999, a Fraternidade do Triângulo Ramatis é uma Organização da Sociedade Civil de Limeira voltada ao atendimento de crianças, adolescentes e suas famílias. Entre suas atividades estão circo e malabares, trabalhados como experiências de equilíbrio, concentração, coordenação, criatividade e superação de desafios.",
+        visual: "CR",
+        image: "",
+        instagram: "https://www.instagram.com/ftramatisorgbr/",
+        website: "https://www.ftramatis.org/"
+      },
+      {
+        id: "ginastica",
+        label: "APRESENTAÇÃO // MOVIMENTO",
+        name: "GINÁSTICA ARTÍSTICA E RÍTMICA",
+        subtitle: "Ginástica Limeira",
+        role: "Associação esportiva // Limeira",
+        description: "Associação sem fins lucrativos fundada em 2019, atua com ginástica artística e rítmica de forma particular e gratuita, com apoio da Prefeitura Municipal e da Secretaria de Esportes de Limeira. Representa o município em campeonatos pelo Brasil e possui filiação à Federação Paulista e à Confederação Brasileira de Ginástica.",
+        visual: "GR",
+        image: "",
+        instagram: "https://www.instagram.com/ginasticalimeira/",
+        website: ""
+      }
+    ],
     schedule: [
+      { time: "—", title: "INTRAFORMA — Desenhar para se reconectar", status: "Horário a divulgar" },
+      { time: "—", title: "Circo e malabares — FTRamatis", status: "Horário a divulgar" },
+      { time: "—", title: "Ginástica artística e rítmica", status: "Horário a divulgar" }
+    ]
+  },
+  schedule: [
       { time: "—", title: "Cronograma da Extra Palestra", status: "A divulgar" }
     ]
   },
