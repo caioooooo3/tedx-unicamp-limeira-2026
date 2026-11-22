@@ -47,24 +47,30 @@ function renderSchedule(target,items){
 renderSchedule('#main-schedule',D.schedule);
 renderSchedule('#extra-schedule',D.extraTalk.schedule);
 
-$$('[data-speaker-id]').forEach(row=>{
-  const open=()=>{
-    const i=speakerIndexById.get(row.dataset.speakerId);
-    if(i!==undefined)openSpeaker(i);
-  };
-  row.addEventListener('click',open);
-  row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
-});
-
 $('#extra-title').innerHTML=D.extraTalk.title.replace(/\n/g,'<br>');
 $('#extra-description').textContent=D.extraTalk.description;
-$('#extra-artist').textContent=D.extraTalk.artist;
-$('#extra-artist-role').textContent=D.extraTalk.artistRole;
-$('#extra-artist-bio').textContent=D.extraTalk.bio;
-const extraVisual=$('#extra-artist-visual');
-if(D.extraTalk.image){extraVisual.innerHTML=`<img src="${D.extraTalk.image}" alt="Foto de ${D.extraTalk.artist}">`;extraVisual.removeAttribute('aria-hidden')}
-const extraLinks=[['Instagram',D.extraTalk.instagram],['Site',D.extraTalk.website]].filter(([,url])=>url);
-$('#extra-artist-socials').innerHTML=extraLinks.length?extraLinks.map(([label,url])=>`<a href="${url}" target="_blank" rel="noopener">${label} ↗</a>`).join(''):'<span class="social-empty">Redes do artista em breve.</span>';
+
+const extraActivities=$('#extra-activities');
+extraActivities.innerHTML=D.extraTalk.activities.map((a,i)=>{
+  const visual=a.image
+    ? `<img src="${a.image}" alt="${a.name}" loading="lazy">`
+    : `<div class="extra-activity-placeholder" aria-hidden="true"><span>${a.visual||String(i+1).padStart(2,'0')}</span></div>`;
+  const links=[['Instagram',a.instagram],['Site',a.website]].filter(([,url])=>url);
+  const socials=links.length
+    ? `<div class="extra-activity-links">${links.map(([label,url])=>`<a href="${url}" target="_blank" rel="noopener">${label} ↗</a>`).join('')}</div>`
+    : '';
+  return `<article class="extra-activity">
+    <div class="extra-activity-visual">${visual}</div>
+    <div class="extra-activity-body">
+      <div class="extra-activity-label">${a.label}</div>
+      <h3>${a.name}</h3>
+      <div class="extra-activity-subtitle">${a.subtitle}</div>
+      <div class="extra-activity-role">${a.role}</div>
+      <p>${a.description}</p>
+      ${socials}
+    </div>
+  </article>`;
+}).join('');
 
 const bars=$$('.bar'),pct=$('#signal-pct');
 function updateSignal(){
