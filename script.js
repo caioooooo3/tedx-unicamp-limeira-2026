@@ -18,7 +18,7 @@ const grid=$('#speakers-grid');
 
 D.speakers.forEach((s,i)=>{
   const el=document.createElement('article');
-  el.className='speaker';
+  el.className='speaker'+(s.fit==='contain'?' speaker--contain':'');
   el.tabIndex=0;
   el.setAttribute('role','button');
   el.setAttribute('aria-label',`Abrir perfil de ${s.name}`);
@@ -94,6 +94,7 @@ function openSpeaker(i){
   if(s.image){
     modalImage.src=s.image;
     modalImage.alt=`Foto de ${s.name}`;
+    modalImage.style.objectFit=s.fit||'cover';
     modalImage.hidden=false;
     modalPlaceholder.hidden=true;
   }else{
