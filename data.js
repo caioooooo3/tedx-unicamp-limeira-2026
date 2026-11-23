@@ -116,7 +116,20 @@ window.TEDX_DATA = {
       linkedin: "",
       website: ""
     }
-  ],
+,
+    {
+      id: "mateus",
+      name: "Mateus Lucca",
+      time: "",
+      role: "Superintendente da Etec Trajano Camargo e professor de Educação Física na FHO",
+      talk: "Desconectar para pertencer: a escola como lugar de presença",
+      bio: "Mestre em Desenvolvimento Humano e Tecnologias pela Unesp, Mateus Lucca é superintendente da Etec Trajano Camargo, em Limeira, e professor de Educação Física na Fundação Hermínio Ometto (FHO). Graduado em Educação Física e Pedagogia, tem especializações em Treinamento Desportivo e Gestão Escolar com Ênfase Pedagógica. Sua trajetória une docência e gestão escolar, com foco em fortalecer a convivência e o sentimento de pertencimento dos jovens na escola.",
+      image: "https://www.limeirasummit.com.br/assets/palestrante-mateus-lucca-ppdL8rKR.jpg",
+      position: "73% 50%",
+      instagram: "",
+      linkedin: "",
+      website: ""
+    }  ],
   extraTalk: {
     eyebrow: "Extra Palestra",
     title: "ARTE, MOVIMENTO\nE PRESENÇA.",
